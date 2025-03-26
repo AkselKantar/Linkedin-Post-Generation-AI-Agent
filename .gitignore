@@ -1,0 +1,5 @@
+# Ignore secrets and unnecessary files
+.env
+venv/
+__pycache__/
+*.pyc
