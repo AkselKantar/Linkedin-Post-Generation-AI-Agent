@@ -8,13 +8,13 @@ os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 llm = ChatOpenAI(model="gpt-4", temperature=0.7)
 
-# Define Agents
-topic_agent = Agent(
-    role="Topic Researcher",
-    goal="Find high-impact, trending LinkedIn post topics related to AI for mid-market companies",
-    backstory="You are a marketing strategist who studies what's trending on social media and in industry blogs.",
-    llm=llm
-)
+def create_topic_agent(topic):
+    return Agent(
+        role="Topic Researcher",
+        goal=f"Find high-impact, trending LinkedIn post topics related to {topic}",
+        backstory="You are a marketing strategist who studies what's trending on social media, industry blogs, and articles about {topic}.",
+        llm=llm
+    )
 
 writer_agent = Agent(
     role="Content Writer",
