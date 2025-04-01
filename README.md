@@ -64,4 +64,7 @@ MIT
 
 ---
 
-Happy hacking! 💬
+## 🧪 Try it on Google Colab
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
+(https://colab.research.google.com/drive/1Zqgp99DQV_b_UXlZU5R9Y0pMC8jxc7al?usp=sharing)
