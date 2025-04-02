@@ -12,16 +12,15 @@ This project uses CrewAI agents to generate SEO-optimized LinkedIn post options 
 
 ### 1. Clone the Repo
 
-```bash
 git clone https://github.com/your-username/LinkedIn-Content_Generator.git
 cd LinkedIn-Content_Generator
 ```
 
-### 2. Create a Virtual Environment (Windows)
+### 2. Create a Virtual Environment
 
 ```bash
 python -m venv venv
-.\venv\Scripts\Activate.ps1
+source venv/bin/activate
 ```
 
 ### 3. Install Dependencies

@@ -18,7 +18,8 @@ if __name__ == "__main__":
     topic_result = temp_crew.kickoff()
 
     print("\nSuggested Topics:")
-    topics = [line.strip("- ") for line in topic_result.split("\n") if line.strip()]
+    #topics = [line.strip("- ") for line in topic_result.split("\n") if line.strip()]
+    topics = [line.strip("- ") for line in topic_result.raw.split("\n") if line.strip()]
     for idx, t in enumerate(topics, 1):
         print(f"{idx}. {t}")
 

@@ -1,16 +1,22 @@
 from crewai import Agent
-from langchain_openai import ChatOpenAI
+#from langchain_openai import ChatOpenAI
 import os
 from dotenv import load_dotenv
 from crewai_tools import SerperDevTool
+from crewai import LLM
 
 
 load_dotenv()
-os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+#os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 os.environ["SERPER_API_KEY"] = os.getenv("SERPER_API_KEY")
+os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
 
 google_search_tool = SerperDevTool()
-llm = ChatOpenAI(model="gpt-4", temperature=0.7)
+#llm = ChatOpenAI(model="gpt-4", temperature=0.7)
+llm = LLM(
+    model="groq/deepseek-r1-distill-qwen-32b",
+    temperature=0.7
+)
 
 def create_topic_agent(topic):
     return Agent(
