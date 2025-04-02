@@ -12,7 +12,8 @@ This project uses CrewAI agents to generate SEO-optimized LinkedIn post options 
 
 ### 1. Clone the Repo
 
-git clone https://github.com/your-username/LinkedIn-Content_Generator.git
+```bash
+git clone https://github.com/AkselKantar/Linkedin-Post-Generation-AI-Agent.git
 cd LinkedIn-Content_Generator
 ```
 
@@ -35,10 +36,10 @@ pip install -r requirements.txt
 copy .env.example .env
 ```
 
-Then add your OpenAI key to `.env`:
+Then add your GROQ API key to `.env`:
 
 ```
-OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxx
+GROQ_API_KEY=sk-xxxxxxxxxxxxxxxx
 ```
 
 ### 5. Run the Project
@@ -56,14 +57,3 @@ python main.py
 - `SEO Enhancer`: Optimizes posts with hashtags, links, and keywords
 
 ---
-
-## 📄 License
-
-MIT
-
----
-
-## 🧪 Try it on Google Colab
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
-(https://colab.research.google.com/drive/1Zqgp99DQV_b_UXlZU5R9Y0pMC8jxc7al?usp=sharing)
