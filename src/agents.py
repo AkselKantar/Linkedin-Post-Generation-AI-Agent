@@ -14,7 +14,7 @@ os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
 google_search_tool = SerperDevTool()
 #llm = ChatOpenAI(model="gpt-4", temperature=0.7)
 llm = LLM(
-    model="groq/deepseek-r1-distill-qwen-32b",
+    model="ollama/deepseek-r1:8b",
     temperature=0.7
 )
 

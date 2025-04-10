@@ -8,8 +8,8 @@ def create_tasks(topic_agent, writer_agent, seo_agent, topic):
     )
 
     writer_task = Task(
-        description="Create Linkedin post in the following styles: 1) long-form, and 2) listicle.",
-        expected_output="A content option for the given LinkedIn post topic.",
+        description="Create 3 different Linkedin posts in the following styles: 1) quote-style, 2) long-form, and 3) listicle.",
+        expected_output="3 content options for the given LinkedIn post topic.",
         agent=writer_agent
     )
 
